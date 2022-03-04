@@ -95,7 +95,15 @@ print(result2)
 
 
 def three(a):
-    return 1
+	x = int(str(a)+str(a))
+	y = int(str(a)+str(a)+str(a))
+	z = int(str(a)+str(a)+str(a)+str(a))
+	return a + x + y + z
+result1 = three(9)
+result2 = three(5)
+
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
