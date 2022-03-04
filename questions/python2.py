@@ -135,7 +135,17 @@ print(result2)
 
 
 def four(string1, string2):
-    return ""
+	new = []
+	for i in range(len(string1)):
+		new.append(string1[i])
+		new.append(string2[i])
+	return "".join(new)
+
+result1 = four("String","Fridge")
+result2 = four("Dog","Cat")
+
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -154,9 +164,19 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 
+import random
 def five():
-    return []
+	numbers = []
+	while len(numbers) < 5:
+		number = random.randint(100,200)
+		if number % 2 == 0:
+			numbers.append(number)
+	return numbers
+result1 = five()
+result2 = five()
 
+print(result1)
+print(result2)
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 6>
