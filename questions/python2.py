@@ -197,7 +197,12 @@ print(result2)
 
 
 def six(string):
-    return False
+	result = string.lower().endswith('py')
+	return result
+result1 = six("ilovepy")
+result2 = six("pyiscool")
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
