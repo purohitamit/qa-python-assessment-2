@@ -229,7 +229,16 @@ print(result2)
 
 
 def seven(a, b, c):
-    return False
+	numbers = [a,b,c]
+	numbers.sort()
+	if numbers[2] - numbers[1] == numbers[1] - numbers[0]:
+		return True
+	else:
+		return False
+result1 = seven(2, 4, 6)
+result2 = seven(4, 60, 9)
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
