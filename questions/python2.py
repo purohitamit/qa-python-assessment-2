@@ -30,8 +30,22 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
+from telnetlib import STATUS
+
+
 def one(string):
-    return ""
+    new = []
+    for i in string:
+        new.append(i)
+        new.append(i)
+        new.append(i)
+    return "".join(new)
+result1 = one("The")
+result2 = one("AAbb")
+result3 = one("Hi-There")
+print(result1)
+print(result2)
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
