@@ -30,7 +30,7 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
-from telnetlib import STATUS
+
 
 
 def one(string):
