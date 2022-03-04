@@ -30,8 +30,22 @@
 # <HINT>
 # How does a for loop iterate through a string?
 
+
+
+
 def one(string):
-    return ""
+    new = []
+    for i in string:
+        new.append(i)
+        new.append(i)
+        new.append(i)
+    return "".join(new)
+result1 = one("The")
+result2 = one("AAbb")
+result3 = one("Hi-There")
+print(result1)
+print(result2)
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,8 +66,17 @@ def one(string):
 
 
 def two(number):
-    return False
-
+	for i in range(1, number):
+		if number % i == 0:
+			if i == 1 or i == number:
+				pass
+			else:
+				return False
+	return True
+result1 = two(3)
+result2 = two(8)
+print(result1)
+print(result2)
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 3>
@@ -72,7 +95,15 @@ def two(number):
 
 
 def three(a):
-    return 1
+	x = int(str(a)+str(a))
+	y = int(str(a)+str(a)+str(a))
+	z = int(str(a)+str(a)+str(a)+str(a))
+	return a + x + y + z
+result1 = three(9)
+result2 = three(5)
+
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -104,7 +135,17 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+	new = []
+	for i in range(len(string1)):
+		new.append(string1[i])
+		new.append(string2[i])
+	return "".join(new)
+
+result1 = four("String","Fridge")
+result2 = four("Dog","Cat")
+
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -123,9 +164,19 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 
+import random
 def five():
-    return []
+	numbers = []
+	while len(numbers) < 5:
+		number = random.randint(100,200)
+		if number % 2 == 0:
+			numbers.append(number)
+	return numbers
+result1 = five()
+result2 = five()
 
+print(result1)
+print(result2)
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 6>
@@ -146,7 +197,12 @@ def five():
 
 
 def six(string):
-    return False
+	result = string.lower().endswith('py')
+	return result
+result1 = six("ilovepy")
+result2 = six("pyiscool")
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -173,7 +229,16 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+	numbers = [a,b,c]
+	numbers.sort()
+	if numbers[2] - numbers[1] == numbers[1] - numbers[0]:
+		return True
+	else:
+		return False
+result1 = seven(2, 4, 6)
+result2 = seven(4, 60, 9)
+print(result1)
+print(result2)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
