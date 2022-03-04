@@ -66,8 +66,17 @@ print(result2)
 
 
 def two(number):
-    return False
-
+	for i in range(1, number):
+		if number % i == 0:
+			if i == 1 or i == number:
+				pass
+			else:
+				return False
+	return True
+result1 = two(3)
+result2 = two(8)
+print(result1)
+print(result2)
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 3>
